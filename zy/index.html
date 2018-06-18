@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	
+	<meta charset="UTF-8">
+	<title>js特效</title>
+	<link rel="stylesheet" type="text/css" href="style/style.css">
+</head>
+<body>
+	<script src="libs/jquery.min.js"></script>
+	<!--时间函数-->
+	<div class="time">
+
+	</div>
+	<script>
+	var time=document.getElementsByClassName('time')[0];
+	var w=['日','一','二','三','四','五','六'];
+	function c(n) {
+		return n<10?'0'+n:n;
+	}
+	function fun3() {
+		var date=new Date();
+		var y=date.getFullYear();
+		var m=date.getMonth()+1;
+		var d=date.getDate();
+		var h=c(date.getHours());
+		var i=c(date.getMinutes());
+		var s=c(date.getSeconds());
+		var da=date.getDay();
+		time.innerHTML='现在的时间是'+y+'年'+m+'月'+d+'日，'+h+':'+i+':'+s+'，星期'+w[da];
+	}
+	fun3();
+	setInterval('fun3()',500);
+	</script>
+
+
+	<!--选项卡-->
+	<div class="xuanxiangka">
+		<div class="title clearfix">
+			<h3 class="act">无缝滚动</h3>
+			<h3>轮播图</h3>
+			<h3>抽屉效果图</h3>
+		</div>
+
+		<div class="content clearfix">
+			<!--无缝滚动-->
+			<div class="box show">
+				<div class="wfgd" >
+						<ul>
+						<li><img src="images/1.png" alt=""></li>
+						<li><img src="images/2.png" alt=""></li>
+						<li><img src="images/3.jpg" alt=""></li>
+						<li><img src="images/4.png" alt=""></li>
+						<li><img src="images/5.jpg" alt=""></li>
+					</ul>
+					<span class="span1">左</span>
+					<span class="span2">右</span>
+				</div>
+			</div>
+			<!--轮播图-->
+			<div class="box">
+				<div class="lunbo">
+					<ol>
+						<li class="act"></li>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+					</ol>
+					<ul>
+						<li><img src="images/5.jpg" alt=""></li>
+						<li><img src="images/1.png" alt=""></li>
+						<li><img src="images/2.png" alt=""></li>
+						<li><img src="images/3.jpg" alt=""></li>
+						<li><img src="images/4.png" alt=""></li>
+						<li><img src="images/5.jpg" alt=""></li>
+						<li><img src="images/1.png" alt=""></li>
+					</ul>
+					<div class="prve"><</div>
+					<div class="next">></div>
+				</div>
+			</div>
+			<!--抽屉效果图-->
+				<div class="box">
+					<div class="chouti">
+						<div class="ct1 ctt">
+							<div class="title">第一个</div>
+							<div class="img"><img src="images/1.png" alt=""></div>
+						</div>
+						<div class="ct2 ctt">
+							<div class="title">第二个</div>
+							<div class="img"><img src="images/2.png" alt=""></div></div>
+						<div class="ct3 ctt"
+						><div class="title">第三个</div>
+							<div class="img"><img src="images/3.jpg" alt=""></div></div>
+						<div class="ct4 ctt">
+							<div class="title">第四个</div>
+							<div class="img"><img src="images/4.png" alt=""></div></div>
+					</div>
+				</div>
+		</div>
+	</div>
+	</div>
+	<!--选项卡js-->
+	<script type="text/javascript" src="js/xuanxiangka.js"></script>
+	<!--无缝滚动js-->
+	<script type="text/javascript" src="js/wugd.js">
+	</script>
+	<!--轮播图js-->
+	<script type="text/javascript" src="js/lunbotu.js"></script>
+	<!--抽屉效果js-->
+	<script type="text/javascript" src="js/chouti.js"></script>
+</body>
+</html>

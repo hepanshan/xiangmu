@@ -1,0 +1,239 @@
+@charset 'UTF-8';
+* {
+	margin: 0;
+	padding: 0;
+}
+ul {
+	list-style: none;
+}
+body {
+	background: #1E1E1E;
+}
+img {
+		vertical-align: middle;
+	}
+.clearfix::after{
+	content: '';
+	display: block;
+	clear: both;
+}
+.time {
+	margin-top: 50px;
+	height: 100px;
+	color: #fff;
+	text-align: center;
+}
+.xuanxiangka {
+	width: 904px;
+	margin: 0 auto;
+	background: #1e1e1e;
+}
+.title{
+	width: 462px;
+	height: 54px;
+}
+.title h3 {
+	width: 150px;
+	height: 50px;
+	float: left;
+	border: 2px solid #000;
+	cursor: pointer;
+	font-size: 20px;
+	line-height: 50px;
+	background: #999;
+	color: #fff;
+	text-align: center;
+}
+.title .act {
+	border-color: #000;
+	height: 52px;
+	border-bottom: none;
+	background: #fff;
+	color: #000;
+}
+.box {
+	display: none;
+	width: 900px;
+	height: 500px;
+	float: left;
+	background: #fff;
+}
+.content .show {
+	display: block;
+}
+.content {
+	margin-top: -2px;
+	border: 2px solid #000;
+}
+.wfgd {
+	top: 100px;
+	width: 480px;
+	height: 120px;
+	margin: 0 auto;
+	overflow: hidden;
+	position: relative;
+	border: 2px solid #000;
+}
+.wfgd span {
+	display: inline-block;
+	position: absolute;
+	width: 40px;
+	height: 100%;
+	color: #fff;
+	background: linear-gradient(to right,rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+	left: 0px;
+	font-size: 20px;
+	line-height: 100px;
+	z-index: 2;
+	cursor: pointer;
+	text-align: center;
+	opacity: 0;
+	transition: 1s;
+}
+.wfgd .span2 {
+	left: 440px;
+	background: linear-gradient(to left,rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+}
+.wfgd:hover span{
+	opacity: 1;
+}
+.wfgd img {
+	display: block;
+	width: 100px;
+	height: 100px;
+}
+.wfgd li {
+	width: 100px;
+	float: left;
+	padding: 10px;
+}
+.wfgd ul {
+	width: 600px;
+	height: 100px;
+	position: absolute;
+	background: #fff;
+	left: 0px;
+}
+.lunbo {
+	width: 400px;
+	height: 400px;
+	overflow: hidden;
+	position: relative;
+	margin: 0 auto;
+	margin-top: 50px;
+}
+.lunbo img {
+	width: 400px;
+	height: 400px;
+}
+.lunbo ul {
+	width: 2800px;
+	position: absolute;
+	left: -400px;
+	z-index:0;	
+}
+.lunbo ul li {
+	float: left;
+}
+.lunbo ol {
+	position: absolute;
+	bottom: 0px;
+	z-index: 3;
+	width: 100%;
+	height: 20px;
+	text-align: center;
+}
+.lunbo ol li {
+	border: 5px solid rgba(255, 255, 255, 0.7);
+	border-radius: 50%;
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	background: #888;
+	width: 10px;
+	height: 10px;
+	z-index: 3;
+	cursor: pointer;
+}
+.lunbo .act {
+	background: #f88;
+}
+.prve, .next {
+	position: absolute;
+	width: 50px;
+	height: 100%;
+	font-size: 50px;
+	line-height: 400px;
+	text-align: center;
+	cursor: pointer;
+	opacity: 0;
+	border-radius:0px 50% 50% 0px;
+	color: #fff;
+	transition: 1s;
+}
+.prve {
+	left: 0px;
+  background: linear-gradient(to right,rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0));
+}
+.next {
+	right: 0px;
+	border-radius:50% 0px 0px 50%;
+	background: linear-gradient(to left,rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0));
+}
+.lunbo:hover .prve, .lunbo:hover .next{
+	opacity: 1;
+}
+.chouti img {
+	width: 400px;
+	height: 400px;
+}
+.chouti {
+	width: 800px;
+	height: 400px;
+	overflow: hidden;
+	background: #999;
+	margin: 50px auto;
+	position: relative;
+}
+.chouti .ctt {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	background: #f00;
+	cursor: pointer;
+	transition: 1s linear;
+}
+.ctt .title {
+	width: 30px;
+	padding: 125px 35px;
+	height: 150px;
+	float: left;
+	font-size: 25px;
+	font-weight: bold;
+}
+.chouti .ct1{
+	background: #f00;
+	left: 0px;
+}
+.chouti .ct2 {
+	background: #f0f;
+	left: 500px;
+}
+.chouti .ct3 {
+	background: #ff0;
+	left: 600px;
+}
+.chouti .ct4 {
+	background: #0ff;
+	left: 700px;
+}
+.ctt .img {
+	width: 400px;
+	float: left;
+	position: absolute;
+	left: 100px;
+}
+
+
+
+
