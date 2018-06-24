@@ -1,0 +1,33 @@
+@charset 'UTF-8';
+.content {
+	position: relative;
+}
+.form {
+	margin-top: 100px;
+}
+form p {
+	font-size: 20px;
+	line-height: 20px;
+	color: #f0f;
+	font-weight: bold;
+	margin: 20px 0px;
+}
+input {
+	width: 300px;
+	height: 25px;
+	margin-bottom: 20px;
+}
+.tijiao {
+	width: 40px;
+	height: 20px;
+	margin: 0 auto;
+}
+.imgg {
+	position: absolute;
+	top: 0px;
+	left: 350px;
+}
+.imgg img {
+	width: 500px;
+	height: 500px;
+}

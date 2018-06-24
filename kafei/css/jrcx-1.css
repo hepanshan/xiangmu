@@ -1,0 +1,26 @@
+@charset 'UTF-8';
+.content .banner {
+	height: 500px;
+	background-image: url('../images/banner3.png');
+	background-position: center 0px;
+}
+.title {
+	margin: 0 auto;
+	width: 200px;
+	height: 50px;
+	background: #E51960;
+	margin-top: 100px;
+	text-align: center;
+	color: #fff;
+	font-size: 25px;
+	line-height: 50px;
+	box-shadow: 10px 10px 0px #999;
+	margin-bottom: 50px;
+}
+.youhuijuan .title {
+	box-shadow: none;
+	float: left;
+	background: #00f;
+	margin: 10px;
+	cursor: pointer;
+}

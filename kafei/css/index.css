@@ -1,0 +1,55 @@
+@charset 'UTF-8';
+
+.title {
+	margin-top: 50px;
+}
+.title h1 {
+	font-size: 50px;
+	font-family: "微软雅黑";
+	text-align: center;
+}
+.tupian {
+	padding-top: 100px;
+}
+.tupian li {
+	float: left;
+	width: 200px;
+	padding: 0px 25px;
+}
+.tupian li .tp {
+	width: 200px;
+	height: 200px;
+	background: url('../images/kafei1.png') no-repeat center;
+	background-size: 200px 200px;
+	transition: 1s;
+}
+.tupian p {
+	text-align: center;
+	padding-top: 10px;
+	font-size: 12px;
+	line-height: 12px;
+}
+.tupian li:hover .tp {
+	background-size: 300px 300px;
+}
+.list {
+	margin-top: 100px;
+}
+.list li {
+	height: 50px;
+	text-align: right;
+	font-style: italic;
+	font-size: 20px;
+	line-height: 50px;
+}
+.list li a {
+	float: left;
+	font-style: normal;
+	font-weight: bold;
+}
+
+
+
+
+
+
